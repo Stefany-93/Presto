@@ -12,6 +12,11 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     --red: rgb(228, 32, 43);
 }
 
+body{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
 .bg-yellow {
     background-color: var(--yellow);
 }
@@ -55,4 +60,68 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 
 .logo {
     width: 50px;
+}
+
+.logo2 {
+    width: 100px;
+    transition: 0.5s;
+}
+
+/* Header */
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0), transparent, rgba(0,0,0)), url(https://www.blogshifts.net/wp-content/uploads/2023/09/sfondo-di-iperspazio-3d-con-effetto-tunnel-di-curvatura.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-custom {
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+
+.btn-custom:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+
+/* Positioned */
+
+.positioned {
+    position: relative;
+    top: -150px;
+}
+
+.col-custom {
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--black);
+}
+
+.col-custom:hover {
+    transform: scale(1.1);
+    background-color: var(--black);
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+@media screen and (max-width: 600px){
+    .positioned{
+        position: static;
+    }
+}
+
+/* Numeri incrementali */
+.number {
+    font-size: 50px;
+    font-weight: 900;
 }
